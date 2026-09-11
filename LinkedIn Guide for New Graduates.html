@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LinkedIn guide — BYU alumni event</title>
+<meta name="description" content="Profile setup, finding BYU alumni, and message templates you can copy.">
+<meta name="theme-color" content="#002E5D">
+<style>
+  :root{
+    --navy:#002E5D;
+    --blue:#1B72C4;
+    --ice:#EDF2F8;
+    --ink:#16212C;
+    --muted:#5A6B7D;
+    --rule:#D5DEE9;
+    --paper:#FFFFFF;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font:400 17px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .wrap{max-width:36rem;margin:0 auto;padding:0 1.15rem 4rem}
+
+  header{background:var(--navy);color:#fff;padding:2.6rem 0 2.2rem;margin-bottom:2rem}
+  header .wrap{padding-bottom:0}
+  h1{
+    font:700 2rem/1.15 Georgia,"Times New Roman",serif;
+    margin:0 0 .6rem;letter-spacing:-.01em;
+  }
+  header p{margin:0;color:#C5D8EA;font-size:1.02rem}
+
+  h2{
+    font:700 1.35rem/1.25 Georgia,"Times New Roman",serif;
+    color:var(--navy);margin:2.6rem 0 .5rem;
+  }
+  h2:first-of-type{margin-top:1rem}
+  .lede{color:var(--muted);margin:0 0 1.1rem}
+
+  ol.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+  ol.steps li{
+    counter-increment:s;position:relative;
+    padding:0 0 1.3rem 2.6rem;
+  }
+  ol.steps li::before{
+    content:counter(s);
+    position:absolute;left:0;top:.05rem;
+    width:1.75rem;height:1.75rem;border-radius:50%;
+    background:var(--blue);color:#fff;
+    font:700 .95rem/1.75rem Georgia,serif;text-align:center;
+  }
+  ol.steps > li > b{display:block;margin-bottom:.15rem}
+  ol.steps p{margin:0;color:var(--ink)}
+
+  dl{margin:0}
+  dl div{padding:.85rem 0;border-top:1px solid var(--rule)}
+  dl div:last-child{border-bottom:1px solid var(--rule)}
+  dt{font-weight:700;margin-bottom:.15rem}
+  dd{margin:0;color:var(--ink)}
+  dd .eg{color:var(--muted);font-style:italic}
+
+  .tmpl{
+    border:1px solid var(--rule);border-radius:.55rem;
+    padding:.95rem 1rem 1rem;margin:0 0 .8rem;background:var(--paper);
+  }
+  .tmpl h3{
+    margin:0 0 .5rem;font:600 .95rem/1.3 inherit;color:var(--blue);
+  }
+  .tmpl p{margin:0 0 .85rem;color:var(--navy)}
+  .copy{
+    appearance:none;border:1px solid var(--navy);background:var(--paper);
+    color:var(--navy);font:600 .9rem/1 inherit;
+    padding:.6rem 1rem;border-radius:.4rem;cursor:pointer;
+    min-height:2.6rem;width:100%;
+  }
+  .copy:hover{background:var(--ice)}
+  .copy:focus-visible{outline:3px solid var(--blue);outline-offset:2px}
+  .copy[data-done="1"]{background:var(--navy);color:#fff;border-color:var(--navy)}
+
+  .callout{
+    background:var(--ice);border-radius:.55rem;
+    padding:1rem 1.05rem;margin:2.4rem 0 0;
+  }
+  .callout p{margin:0}
+
+  .note{color:var(--muted);font-size:.95rem}
+  footer{margin-top:2.5rem;padding-top:1.2rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.92rem}
+  .pdflink{color:var(--blue);font-weight:600;text-decoration:underline;text-underline-offset:.18em}
+  .pdflink:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+  @media (prefers-reduced-motion:no-preference){
+    .copy{transition:background .15s ease,color .15s ease}
+  }
+  @media (min-width:38rem){
+    h1{font-size:2.5rem}
+    body{font-size:18px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <h1>Your LinkedIn guide</h1>
+    <p>Everything from the talk, plus the parts we didn't have time for.</p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <h2>Do these three things today</h2>
+  <ol class="steps">
+    <li>
+      <b>Connect in the room</b>
+      <p>Pull out your phone during the conversation. “Can I find you on LinkedIn real quick?” is a completely normal thing to say at an event like this. If that feels awkward, keep a notesheet in your pocket instead and write down their name, their company, and two or three things you talked about.</p>
+    </li>
+    <li>
+      <b>Always add a note</b>
+      <p>Never send a blank request. One specific sentence about what you actually talked about is what makes you findable three months from now.</p>
+    </li>
+    <li>
+      <b>Follow up within 48 hours</b>
+      <p>One short message while they still remember your face. Reference the conversation and ask one small question. Don't attach a resume and don't ask for a job.</p>
+    </li>
+  </ol>
+
+  <h2>Set up a profile worth looking at</h2>
+  <p class="lede">Alumni will look you up after today. Your profile's job is to survive a recruiter keyword search and back up a referral — not to replace your GitHub.</p>
+  <dl>
+    <div>
+      <dt>Headline</dt>
+      <dd>Not “Student at BYU.” This is the most heavily weighted field in recruiter search, so use it: <span class="eg">CS student at BYU | Backend &amp; distributed systems | Seeking Summer 2027 SWE internship</span></dd>
+    </div>
+    <div>
+      <dt>Photo</dt>
+      <dd>Plain background, good light, shoulders up, you smiling. A decent phone photo is fine. No photo is not.</dd>
+    </div>
+    <div>
+      <dt>Banner image</dt>
+      <dd>Swap the default grey for anything — campus, a skyline, a simple color. Takes 30 seconds and instantly looks more deliberate.</dd>
+    </div>
+    <div>
+      <dt>About</dt>
+      <dd>Three or four sentences, first person. What you study, what you're drawn to, what you're looking for. Not a resume summary.</dd>
+    </div>
+    <div>
+      <dt>Experience</dt>
+      <dd>Retail, campus jobs, and club roles all count. Write what you accomplished, not what you were assigned. Numbers help.</dd>
+    </div>
+    <div>
+      <dt>Skills</dt>
+      <dd>Search filters, not decoration. List the actual technologies — Python, React, Go, PostgreSQL — not “programming.” Recruiters filter on exact terms.</dd>
+    </div>
+    <div>
+      <dt>Featured section</dt>
+      <dd>Sits near the top and almost no student uses it. Your GitHub, personal site, or a project demo goes here — for CS it's the most valuable field on the page after your headline.</dd>
+    </div>
+    <div>
+      <dt>Custom URL</dt>
+      <dd>Two minutes to change, and it's what goes on your resume instead of a string of random digits.</dd>
+    </div>
+  </dl>
+
+  <h2>Settings most students never find</h2>
+  <dl>
+    <div>
+      <dt>Turn off activity broadcasts before you edit</dt>
+      <dd>Otherwise every tweak notifies your whole network. Settings → Visibility → Share profile updates with your network. Turn it back on when you're done.</dd>
+    </div>
+    <div>
+      <dt>Private browsing mode</dt>
+      <dd>You can view profiles anonymously — useful when you're researching an interviewer. Trade-off: while private, you lose your own “who viewed your profile” data.</dd>
+    </div>
+    <div>
+      <dt>“Open to Work” has two versions</dt>
+      <dd>Recruiters-only (discreet) or the green photo frame (public). Most people don't know the discreet option exists — it matters if you're currently employed.</dd>
+    </div>
+    <div>
+      <dt>Job alerts</dt>
+      <dd>Save a search once and let LinkedIn email you new postings daily instead of checking manually.</dd>
+    </div>
+  </dl>
+
+  <h2>Finding BYU alumni who do what you want to do</h2>
+  <p class="lede">The single most useful feature on LinkedIn for a student, and almost nobody knows it's there.</p>
+  <ol class="steps">
+    <li><p>Search <b>Brigham Young University</b> and open the school page — not a person, the university's own page.</p></li>
+    <li><p>Click the <b>Alumni</b> tab. On mobile it may be labeled <b>People</b>.</p></li>
+    <li><p>Filter <b>what they do</b> to <b>Engineering</b> and <b>where they work</b> to a company you want. You'll almost always find BYU CS grads there — and a shared school is a legitimate reason to reach out cold.</p></li>
+    <li><p>Sort by graduation year to find people three to five years ahead of you. They remember what recruiting was like and they're far more likely to reply than a senior executive.</p></li>
+  </ol>
+
+  <h2>Messages you can copy</h2>
+  <p class="lede">Short, specific, no ask in the first message. That gets replies; everything else gets ignored.</p>
+
+  <div class="tmpl">
+    <h3>Connection note for someone you met today</h3>
+    <p id="t1">Great talking with you about what code review actually looks like on your team today — thanks for the advice on summer internships. Glad we connected.</p>
+    <button class="copy" data-for="t1">Copy this message</button>
+  </div>
+
+  <div class="tmpl">
+    <h3>Cold outreach to alumni at a company you want</h3>
+    <p id="t2">Hi [Name], I'm a junior in CS at BYU. I found you through the BYU alumni page and saw you're a [role] at [company] — that's the kind of work I'm aiming for. Would you be open to 15 minutes to hear how you got there? Happy to work around your schedule.</p>
+    <button class="copy" data-for="t2">Copy this message</button>
+  </div>
+
+  <div class="tmpl">
+    <h3>Following up after a conversation</h3>
+    <p id="t3">Hi [Name], thanks again for the time last week — the point about going deep on one project instead of shipping five shallow ones really changed what I'm building next. I started [project] because of it. I'll keep you posted.</p>
+    <button class="copy" data-for="t3">Copy this message</button>
+  </div>
+
+  <div class="tmpl">
+    <h3>Messaging a recruiter about a specific role</h3>
+    <p id="t4">Hi [Name], I applied for the [exact job title] role (req #[number]) last week. I'm a [year] in CS at BYU, and [one specific reason you fit — something you shipped, relevant coursework, a past internship]. Happy to send my GitHub over if that's useful.</p>
+    <button class="copy" data-for="t4">Copy this message</button>
+  </div>
+
+  <h2>Using LinkedIn for the actual job search</h2>
+  <dl>
+    <div>
+      <dt>Recruiting starts absurdly early</dt>
+      <dd>Postings for next summer's SWE internships often open in August and September. A profile that's ready in the fall beats a perfect one in March.</dd>
+    </div>
+    <div>
+      <dt>Referrals are the whole game</dt>
+      <dd>A referral from someone inside is what gets a human to actually open your application. That is what the alumni search above is for.</dd>
+    </div>
+    <div>
+      <dt>Apply in the first few days</dt>
+      <dd>Postings collect hundreds of applicants fast, and many are reviewed roughly in the order they arrive.</dd>
+    </div>
+    <div>
+      <dt>Skip Premium for now</dt>
+      <dd>The free tier does everything on this page. Save it for when you're actively interviewing and want InMail.</dd>
+    </div>
+  </dl>
+
+  <div class="callout">
+    <p><b>If you only do one thing:</b> connect with the people you talked to today, with a note, before the day is over. The rest of this page still works next week — that part doesn't.</p>
+  </div>
+
+  <footer>
+    <p><a class="pdflink" href="LinkedIn%20Guide%20for%20Graduates.pdf">Download the printable PDF</a></p>
+    <p class="note">BYU alumni event · Shared as a reference, not an official LinkedIn resource.</p>
+  </footer>
+
+</main>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var src = document.getElementById(btn.dataset.for);
+    if(!src) return;
+    var text = src.textContent.trim();
+    var done = function(){
+      btn.textContent = 'Copied';
+      btn.dataset.done = '1';
+      setTimeout(function(){
+        btn.textContent = 'Copy this message';
+        btn.removeAttribute('data-done');
+      }, 1800);
+    };
+    if(navigator.clipboard && window.isSecureContext){
+      navigator.clipboard.writeText(text).then(done, function(){ fallback(text, done); });
+    } else {
+      fallback(text, done);
+    }
+  });
+});
+function fallback(text, done){
+  var ta = document.createElement('textarea');
+  ta.value = text;
+  ta.setAttribute('readonly','');
+  ta.style.position = 'fixed';
+  ta.style.top = '-1000px';
+  document.body.appendChild(ta);
+  ta.select();
+  try { document.execCommand('copy'); done(); } catch(e) {}
+  document.body.removeChild(ta);
+}
+</script>
+
+</body>
+</html>
